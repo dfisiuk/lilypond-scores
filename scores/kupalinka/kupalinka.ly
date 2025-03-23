@@ -1,4 +1,4 @@
-\version "2.24.4"
+\version "2.24.3"
 \header {
   title = "Купалінка"
   composer = "У.В. Тэраўскі"
@@ -17,7 +17,8 @@ c'4.\( b8\) | a\<\( b c\! a\) | b2 b | \break
 \bar ".|:" d4.\mf\( c8\) | b\( a b4\) | a\( c\) | b\( a\) | \break
 g\( b\) | a8\( g a4\) | e2\> e\! | \bar ":|." \break
 }
+\layout {}
 \midi {
   \tempo 4=100
-}
+ }
 }
