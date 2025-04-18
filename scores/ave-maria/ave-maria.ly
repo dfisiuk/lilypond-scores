@@ -3,23 +3,32 @@
   title = ""
   composer = ""
 }
+
 \score {
   \new Staff \with {
     instrumentName = "Flute"
     midiInstrument = "flute"
   }
-\relative {
+\relative c'' {
 % \key g \major
-\time 2/4
-
-c''1 b4 c e1 d2 c1 \break
-d1 e8 d c4 b4 a b c1 \break
-e8 e1 d8 c b4 a e'4 fis e1 dis \break
-b8 d1 c4 b d e f d b c1 \break
-e2 d4 d2 b4 a4 cis4 e4 g4 e4 cis4 d1 a4 b4 c4 b4 a4 g1 \break
+% \key bes \major
+\time 4/4
+\tempo 4 = 29
+c4. b16 c e4.. d16 c4 r4 \break
+%%\set Score.timing = ##f % disable auto timing 
+d4 e32[ d] c16[ b] a[ b] c4 r8 \break 
+%%\set Score.timing = ##t % enable auto timing
+e8 e8. d32[ c32] b16 a[ e'16. fis] e4 dis8. \break
+b16 d8. c16 b[ d e] f[ d b] c4. \break
+e16[ d] d8. b16 a[ cis e g e cis] d4\( d16\)[ a b c b a] g4 r8 \break
+g8 d'8. d16 d16. cis32 d16. e32 d16.[ e32] c8 r8. \break
+c8 d8. d16 d16[ cis d f e d] c4 r8 \break
+c8 d8. d16 e16. e32 e16[ d e] g8 f8 r8. \break
+a,16 e'8 d c16[ b c e d c] d4. r8 \break
+c4. b16 c e4.. d16 c4 r4
 }
 \layout {}
 \midi {
-  \tempo 4=112
+  \tempo 4=29
  }
 }
