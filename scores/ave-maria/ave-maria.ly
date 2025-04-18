@@ -14,6 +14,7 @@
 % \key bes \major
 \time 4/4
 \tempo 4 = 29
+\autoBeamOff
 c4. b16 c e4.. d16 c4 r4 \break
 %%\set Score.timing = ##f % disable auto timing 
 d4 e32[ d] c16[ b] a[ b] c4 r8 \break 
